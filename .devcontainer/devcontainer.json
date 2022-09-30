@@ -1,9 +1,15 @@
 {
-    "name": "Accelerate",
+    "name": "Accelerate (GPU)",
   
     "build": {
       "dockerfile": "Dockerfile"
     },
+
+    // Enable GPU in the container.
+    "runArgs": [
+      "--gpus",
+      "all"
+    ],
 
     "extensions": [
       "haskell.haskell"
@@ -27,7 +33,7 @@
       // Mount local ssh files
       "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
       // Mount stack build cache to volume to improve succeeding builds
-      "source=accelerate-cache,target=/home/vscode/.stack,type=volume",
+      "source=accelerate-gpu-cache,target=/home/vscode/.stack,type=volume",
       // Configure WSLg display
       "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
       "source=/mnt/wslg,target=/mnt/wslg,type=bind"
