@@ -34,9 +34,9 @@ flags:
   accelerate:
     # set to 'true' if you use one of the code generating backends below; you
     # can get information about what code is generated, etc.
-    debug: false
+    debug: true
   template-accelerate:
-    llvm-cpu: false   # set to 'true' to generate parallel CPU code
+    llvm-cpu: true   # set to 'true' to generate parallel CPU code
     llvm-ptx: false   # set to 'true' to generate code for NVIDIA GPUs
 
 # Extra per-package and global ghc options. This shouldn't be required...

@@ -1,5 +1,5 @@
 {
-    "name": "Accelerate",
+    "name": "Accelerate (CPU)",
   
     "build": {
       "dockerfile": "Dockerfile"
@@ -27,7 +27,7 @@
       // Mount local ssh files
       "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
       // Mount stack build cache to volume to improve succeeding builds
-      "source=accelerate-cache,target=/home/vscode/.stack,type=volume",
+      "source=accelerate-cpu-cache,target=/home/vscode/.stack,type=volume",
       // Configure WSLg display
       "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
       "source=/mnt/wslg,target=/mnt/wslg,type=bind"

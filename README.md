@@ -1,7 +1,4 @@
-# Template for Accelerate Projects
-This template contains the basis for an [Accelerate](https://github.com/AccelerateHS/accelerate) project.
-
-This template will use the interpreter for Accelerate. For CPU and GPU, respectively use this repository's [cpu](https://github.com/larsvansoest/template-accelerate/tree/cpu) and [gpu](https://github.com/larsvansoest/template-accelerate/tree/gpu) branches.
+# Template for Accelerate Projects (CPU)
 
 ## Setting up the dev environment (Nvidia GPU + Windows 11 + WSL2)
 
